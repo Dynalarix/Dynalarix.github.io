@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retinazer - DevOps Engineer</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>retinazer</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>DevOps Engineer</h2>
+            <p>Building robust infrastructure and automating workflows with modern DevOps practices</p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Currently I'm a student, and I've been a DevOps trainee in a company during the first and second course of university. 
+                    I also have a good knowledge in programming, patterns, and languages including Pascal, C++, Lua, and Python.
+                </p>
+                <p style="margin-top: 1rem;">
+                    I have experience setting up visualization for logs using Elasticsearch and Kibana, and I'm passionate about 
+                    creating efficient, scalable infrastructure solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Web & Proxy</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">nginx</span></li>
+                        <li><span class="skill-tag">Port Forwarding</span></li>
+                        <li><span class="skill-tag">DDoS Protection</span></li>
+                        <li><span class="skill-tag">Load Balancing</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Containerization</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">Docker</span></li>
+                        <li><span class="skill-tag">Docker-Compose</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Automation & CI/CD</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">GitLab CI/CD</span></li>
+                        <li><span class="skill-tag">Bash Scripting</span></li>
+                        <li><span class="skill-tag">Python Scripting</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Infrastructure</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">Proxmox</span></li>
+                        <li><span class="skill-tag">Backups</span></li>
+                        <li><span class="skill-tag">Monitoring</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">Python</span></li>
+                        <li><span class="skill-tag">Bash</span></li>
+                        <li><span class="skill-tag">C++</span></li>
+                        <li><span class="skill-tag">Lua</span></li>
+                        <li><span class="skill-tag">Pascal</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Monitoring & Visualization</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">Elasticsearch</span></li>
+                        <li><span class="skill-tag">Kibana</span></li>
+                        <li><span class="skill-tag">Log Management</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Coming Soon</h3>
+                    <p>Your DevOps projects will be displayed here. Perfect place to showcase your infrastructure setups and automation scripts.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Placeholder</h3>
+                    <p>Describe your CI/CD pipelines, containerized applications, or infrastructure automation projects here.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Future Project</h3>
+                    <p>Highlight your experience with monitoring, backups, or security implementations in this section.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-links">
+                <a href="https://gitlab.com/Hoco4ek" class="contact-btn" target="_blank">
+                    <span>GitLab Profile</span>
+                </a>
+                <a href="mailto:your.email@example.com" class="contact-btn">
+                    <span>Send Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 retinazer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'var(--dark-purple)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, var(--dark-purple), var(--primary-purple))';
+            }
+        });
+    </script>
+</body>
+</html>
+

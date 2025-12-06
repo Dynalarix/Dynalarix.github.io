@@ -1,9 +1,9 @@
 :root {
-    --primary-purple: #6B46C1;
-    --dark-purple: #4C1D95;
+    --primary-purple:#470B8A /*#6B46C1*/;
+    --dark-purple:  #1D1D40 /*#4C1D95;*/;
     --light-purple: #9F7AEA;
-    --background: #0F0F23;
-    --card-bg: #1A1A2E;
+    --background: #10297A /*#3C3254;*/ /* #0F0F23; */;
+    --card-bg: #261E4A/*#222254 #1A1A2E; */;
     --text-light: #E2E8F0;
     --text-muted: #A0AEC0;
     
@@ -19,6 +19,7 @@
       }
 
     body {
+           background-color: #181233;
            font-family: 'Courier New', Courier, monospace;
            line-height: 1.6; /* Increase line-height for better readability */
            color: var(--text-light);
@@ -170,7 +171,7 @@
         }
 
         .project-card {
-            background: var(--card-bg);
+            background: #261E4A/*var(--card-bg)*/;
             padding: 2rem;
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.1);
